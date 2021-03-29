@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="msapplication-TileColor" content="#000000">
+    <meta name="theme-color" content="#000000">
+    <title>CoronaGram! - Главная</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="Photo/logo3.png">
+    <link href="hthttps://fonts.googleapis.com/css?family=Google+Sans:100,300,400,500,700,900,100i,300i,400i,500i,700i,900i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="js.js"></script>
+</head>
+
+<body>
+    <div class="statusbar">
+        <div class="logo">
+            <a href="">
+                <img src="https://lh3.googleusercontent.com/pi4sh9P_3GTIb-pJ-tir7-cRNki4Z1lwgKqgTZ83f_O9KrnVqgRbuV6UCIQFnFRiMg" alt="" id="img_logo" class="img_logo" align="center">
+                <h1 id="logoText"><span style="color: #6A149B">C</span><span style="color: #6A149B">orona</span><span style="color:#8BC448">G</span><span style="color:#8BC448">ram</span><span style="color: #6A149B">!</span></h1>
+            </a>
+            <!--  <a href="http://t.me/CMETAHKA">
+               <h2 style="font-size: 0.6rem;">by @<span style="text-decoration: underline; ;">CMETAHKA</span></h2>
+           </a> -->
+        </div>
+        <div class="gridBar2" id="gridBar2">
+            <div class="b1 menu" id="bar2" style="width: 80%;">
+                <ol>
+                    <li>
+                        <a href="news.html" style="color:#8BC448">
+                            <i class="material-icons">chrome_reader_mode</i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="main.html">
+                            <i class="material-icons">home</i>
+                        </a>
+                    </li>
+                    <li onclick="show_menu(true, 2)" onmouseleave="show_menu(false, 2)" onmouseenter="show_menu(true, 2)">
+                        <div class="mapBtn" id="mapBtn2" style="color:white;">
+                            <i class="material-icons">public</i>
+                            <i class="material-icons iconMore" id="icon2">
+                                expand_more
+                            </i>
+                        </div>
+                        <div class="menu-addition" id="menu-addition2" style="border-top: none;">
+                            <ol>
+                                <a href="map/map-world.html">
+                                    <li>- Карта заражения Мира</li>
+                                </a>
+                                <a href="map/map-china.html">
+                                    <li>- Карта заражения Китая</li>
+                                </a>
+                                <a href="map/map-ukraine.html">
+                                    <li>- Карта заражения Украины</li>
+                                </a>
+                                <a href="map/map-russia.html">
+                                    <li>- Карта заражения России</li>
+                                </a>
+                            </ol>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="info.html">
+                            <i class="material-icons">help_outline</i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="about.html">
+                            <i class="material-icons">info</i>
+                        </a>
+                    </li>
+                </ol>
+            </div>
+        </div>
+        <!-- <div class="searchBar">
+            <div class="search">
+                <img src="Photo/search.png" alt="" height="20" align="left">
+                <h6>Поиск</h6>
+            </div>
+        </div>-->
+        <!--  <div class="social">
+           <a href="http://t.me/CMETAHKA" title="My Telegram">
+               <img src="Photo/telegram.png" alt="">
+           </a>
+           <a href="https://www.instagram.com/pripa.doc" title="My Instagram">
+               <img src="Photo/insta.png" alt="">
+           </a>
+           <a href="https://vk.com/mr.greenson" title="My VK">
+               <img src="Photo/vk.png" alt="">
+           </a>
+       </div> -->
+        <div class="profile">
+            <script async src="https://telegram.org/js/telegram-widget.js?7" data-telegram-login="CoronaGramBot" data-size="medium" data-onauth="onTelegramAuth(user)" data-request-access="write"></script>
+        </div>
+    </div>
+    <div class="social">
+        <a href="http://t.me/CMETAHKA" title="My Telegram">
+            <img src="Photo/telegram.png" alt="">
+        </a>
+        <a href="https://www.instagram.com/pripa.doc" title="My Instagram">
+            <img src="Photo/insta.png" alt="">
+        </a>
+        <a href="https://vk.com/mr.greenson" title="My VK">
+            <img src="Photo/vk.png" alt="">
+        </a>
+    </div>
+    <div id="btnUp">
+        <a href="#" style="color:white;">
+            <i class="material-icons" style="font-size: 50px;">
+                arrow_upward
+            </i>
+        </a>
+    </div>
+    <div class="gridBar">
+        <div class="b1 block menu">
+            <ol>
+                <li>
+                    <a href="news.html" style="color:#8BC448">
+                        <i class="material-icons">chrome_reader_mode</i>
+                        Новости
+                    </a>
+                </li>
+                <li>
+                    <a href="main.html">
+                        <i class="material-icons">home</i>
+                        Главная
+                    </a>
+                </li>
+                <li onclick="show_menu(true, 1)" onmouseleave="show_menu(false, 1)" onmouseenter="show_menu(true, 1)">
+                    <div class="mapBtn" id="mapBtn1" style="color:white;">
+                        <i class="material-icons">public</i>
+                        Карта
+                        <i class="material-icons iconMore" id="icon1">
+                            expand_more
+                        </i>
+                    </div>
+                    <div class="menu-addition" id="menu-addition1">
+                        <ol>
+                            <a href="map/map-world.html">
+                                <li>- Карта заражения Мира</li>
+                            </a>
+                            <a href="map/map-china.html">
+                                <li>- Карта заражения Китая</li>
+                            </a>
+                            <a href="map/map-ukraine.html">
+                                <li>- Карта заражения Украины</li>
+                            </a>
+                            <a href="map/map-russia.html">
+                                <li>- Карта заражения России</li>
+                            </a>
+                        </ol>
+                    </div>
+                </li>
+                <li>
+                    <a href="info.html">
+                        <i class="material-icons">help_outline</i>
+                        Информация
+                    </a>
+                </li>
+                <li>
+                    <a href="about.html">
+                        <i class="material-icons">info</i>
+                        О сайте
+                    </a>
+                </li>
+            </ol>
+        </div>
+    </div>
+    <div class="grid" style="margin-top: -10px;">
+        <div class="i17 block news">
+            <!-- 0 -->
+            <div class="post">
+                <h1>
+                    Видеоматериал с улиц Китая
+                </h1>
+                <div class="postImg">
+                    <iframe class="postDocument" height="700" src="https://www.youtube.com/embed/fXHyajyFS8I">
+                    </iframe>
+                </div>
+                <div class="postInfo">
+                    <div class="postContainer">
+                        <div class="postTimeBlock">
+                            <div class="postTime">
+                                <h5 class="textMuted">06.02.2019</h5>
+                            </div>
+                        </div>
+                        <div class="postDescriptionBlock">
+                            <div class="postDescription">
+                                <p>
+                                    В Китае ничего не поменялось, люди также падают на улицах, кто кашляет, на того докладывают соседи в полицию, приезжают и забирают силой.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="statusBtn">
+                    <div class="statusmark yesmark">Подтверждено</div>
+                </div>
+            </div>
+        </div>
+        <div class="i13 block news">
+            <!-- 0 -->
+            <div class="post">
+                <h1>
+                    213 СМЕРТЕЙ, БОЛЕЕ 12000 ВЫЯВЛЕННЫХ СЛУЧАЕВ ЗАРАЖЕНИЯ В КИТАЕ
+                </h1>
+                <div class="postImg">
+                    <img class="postDocument" src="https://wuhanpneumonia.ru/upload/iblock/c2e/c2e3629a04f4b18bbb9340b2ac07f08f.jpg" alt="">
+                </div>
+                <div class="postInfo">
+                    <div class="postContainer">
+                        <div class="postTimeBlock">
+                            <div class="postTime">
+                                <h5 class="textMuted">31.01.2019</h5>
+                            </div>
+                        </div>
+                        <div class="postDescriptionBlock">
+                            <div class="postDescription">
+                                <p>
+                                    Китай подтвердил 9066 случаев заражения, 12167 человек на подозрении, смерть 213 пациентов... С добрым утром, страна.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="statusBtn">
+                    <div class="statusmark yesmark">Подтверждено</div>
+                </div>
+            </div>
+        </div>
+        <div class="i12 block news">
+            <!-- 0 -->
+            <div class="post">
+                <h1>
+                    ПУГАЮЩИЙ СЛУЧАЙ: МЕДИКИ ОБНАРУЖИЛИ ЗАРАЖЕННОГО КОРОНАВИРУСОМ МАЛЬЧИКА БЕЗ ПРИЗНАКОВ БОЛЕЗНИ
+                </h1>
+                <div class="postImg">
+                    <img class="postDocument" src="https://ncov.su/upload/iblock/aef/aef143a8df35e786108b3a5a449fc137.jpg" alt="">
+                </div>
+                <div class="postInfo">
+                    <div class="postContainer">
+                        <div class="postTimeBlock">
+                            <div class="postTime">
+                                <h5 class="textMuted">30.01.2019</h5>
+                            </div>
+                        </div>
+                        <div class="postDescriptionBlock">
+                            <div class="postDescription">
+                                <p>
+                                    В Китае медики обнаружили 10-летнего мальчика, который не проявлял явных симптомов короновируса, но был болен и мог заразить окружающих. Его случай показывает, что болезнь может распространяться незаметно, а карантин менее эффективен, чем предполагалось ранее.
+                                    Больные коронавирусом могут не проявлять явных симптомов заболевания, но заражать им окружающих. К такому выводу пришла группа китайских ученых, опубликовавших свое исследование в медицинском журнале The Lancet.
+                                    <br><br>
+                                    К авторам исследования 10 января поступила семья из шести человек, вернувшихся в город Шэньчжэнь из Ухани — места, где произошла первая вспышка вируса. Врачи обнаружили новое заболевание у пяти членов семьи. Заразился от них и пациент, который в Ухань не ездил. Не проявлял симптомов — жара, кашля и диареи — только 10-летний мальчик. Однако взволнованные родители настояли на том, чтобы ему сделали компьютерную томографию легких. И она болезнь выявила. Мазки носа и горла также подтвердили диагноз.
+                                    <br><br>
+                                    «Эти загадочные случаи атипичной пневмонии», считают авторы исследования, могут быть причиной быстрого распространения болезни». Исследователи подчеркнули, что случай мальчика стал для них «достаточно неожиданной находкой».
+                                    <br><br>
+                                    В то же время для медиков полной неожиданностью эта история не стала, отмечает Bloomberg. «На данный момент наши исследования показывают, что симптомы детей и младенцев проявляются относительно слабо, тогда как у более взрослых людей симптомы более тяжелые», — приводит агентство заявление замглавы Китайского центра по контролю и профилактике заболеваний Фэн Цзыцзяня.
+                                    <br><br>
+                                    Способствовать распространению вируса действительно могут те, кто не идет к врачам, потому что чувствуют себя «не так плохо», заявил агентству профессор микробиологии и иммунологии университета Северной Каролины Ральф Бэрик. «Одной из вызывающих беспокойство вещей» атипичную пневмонию среди детей в беседе с агентством назвал и профессор патологии Гонконгского университета Джон Николс. Агентство отмечает, что схожие случаи обнаружены и за пределами Китая. Четыре случая заражения в Германии связаны с мероприятием, которое посетила не проявлявшая симптомов женщина из КНР.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="statusBtn">
+                    <div class="statusmark yesmark">Подтверждено</div>
+                </div>
+            </div>
+        </div>
+        <div class="i3 block news">
+            <!-- 2 -->
+            <div class="post">
+                <h1>
+                    СИНГАПУР НАЧАЛ ЭВАКУАЦИЮ СВОИХ ГРАЖДАН ИЗ УХАНЯ ИЗ-ЗА КОРОНАВИРУСА
+                </h1>
+                <div class="postImg">
+                    <img class="postDocument" src="https://wuhanpneumonia.ru/upload/iblock/f97/f976fa3eeccb57ce1f3b204e69103b72.jpg" alt="">
+                </div>
+                <div class="postInfo">
+                    <div class="postContainer">
+                        <div class="postTimeBlock">
+                            <div class="postTime">
+                                <h5 class="textMuted">30.01.2019</h5>
+                            </div>
+                        </div>
+                        <div class="postDescriptionBlock">
+                            <div class="postDescription">
+                                <p>
+                                    «92 сингапурца прибудут из Уханя в Сингапур этим утром рейсом TR121 авиакомпании Scott», — приводит RT сообщение ведомства.
+                                    <br><br>
+                                    В МИД Сингапура уточнили, что по прибытии граждане пройдут медосмотр, и тех, у кого медики выявят симптомы лихорадки и респираторного заболевания, госпитализируют для дополнительного обследования.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="statusBtn">
+                    <div class="statusmark yesmark">Подтверждено</div>
+                </div>
+            </div>
+        </div>
+        <div class="i5 block news">
+            <!-- 3 -->
+            <div class="post">
+                <h1>
+                    ТУРЦИЯ. 2 НА ПОДОЗРЕНИИ (СУДЯ ПО РЕКВИЗИТАМ МЕДИКОВ - ЗАРАЖЕННЫЕ)
+                </h1>
+                <div class="postImg nopicture">
+                    <div class="nopicturemark"></div>
+                </div>
+                <div class="postInfo">
+                    <div class="postContainer postRed">
+                        <div class="postTimeBlock">
+                            <div class="postTime">
+                                <h5 class="textMuted">26.01.2019</h5>
+                            </div>
+                        </div>
+                        <div class="postDescription">
+                            <h5>
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="statusBtn">
+                    <div class="statusmark nomark">Не подтверждено</div>
+                </div>
+            </div>
+        </div>
+        <!--   <div class="i2 block ad">
+          
+            <div align="center">
+                <img src="Photo/add1.jpg" alt="1" width="100%" style="border-radius: 15px 15px 0 0;">
+                <h3>Болото не ждёт!</h3>
+            </div>
+            <div align="center">
+                <img src="Photo/add2.jpg" alt="2" width="100%">
+                <h3>Жена в шоке! Муж просто...</h3>
+            </div>
+            <div align="center">
+                <img src="Photo/add3.jpg" alt="3" width="100%">
+                <h3>Он подошёл и ударил твою мать, твои действия?</h3>
+            </div>
+            <div align="center">
+                <img src="https://muizre.ru/_dr/8/16431973.jpg" alt="4" width="100%">
+                <h3>После этого чая ты почувствуешь себя...</h3>
+            </div>
+            <div align="center">
+                <img src="https://i.ytimg.com/vi/2OtnSr1jYX0/hqdefault.jpg?sqp=-oaymwEZCPYBEIoBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLCVuYl0oApwDh42YanCzW01JVPF4Q" alt="4" width="100%">
+                <h3>Не делай так</h3>
+            </div>
+        </div> -->
+        <div class="i8 block news">
+            <!-- 5 -->
+            <div class="post">
+                <h1>
+                    СИ ЦЗИНЬПИН ЗАЯВИЛ ОБ УСКОРЕНИИ РАСПРОСТРАНЕНИЯ КОРОНАВИРУСА
+                </h1>
+                <div class="postImg">
+                    <img class="postDocument" src="https://wuhanpneumonia.ru/upload/iblock/9ce/9cebc6e133deaed2a1cb6077957ece08.jpeg" alt="">
+                </div>
+                <div class="postInfo">
+                    <div class="postContainer">
+                        <div class="postTimeBlock">
+                            <div class="postTime">
+                                <h5 class="textMuted">25.01.2019</h5>
+                            </div>
+                        </div>
+                        <div class="postDescriptionBlock">
+                            <div class="postDescription">
+                                <p>
+                                    Распространение нового коронавируса в Китае ускоряется, заявил председатель КНР Си Цзиньпин на экстренном заседании Политбюро ЦК коммунистической партии.
+                                    <br><br>
+                                    В связи с этим Си Цзиньпин призвал ЦК принять активное участие в решении проблемы. «Предотвращать и контролировать заболевание — это наша [власти] обязанность» — сообщил глава КНР и потребовал, чтобы профилактика новых вспышек вируса стало приоритетным направлением работы для органов власти всех уровней.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="statusBtn">
+                    <div class="statusmark yesmark">Подтверждено</div>
+                </div>
+            </div>
+        </div>
+        <div class="i11 block news">
+            <!-- 6 -->
+            <div class="post">
+                <h1>
+                    В ОХВАЧЕННЫЙ ЭПИДЕМИЕЙ УХАНЬ ПРИБЫЛИ БОЛЕЕ 2 ТЫСЯЧ МЕДИКОВ
+                </h1>
+                <div class="postImg">
+                    <img class="postDocument" src="https://wuhanpneumonia.ru/upload/iblock/58c/58cca2e4507cc7d9b552b613750012b1.jpg" alt="">
+                </div>
+                <div class="postInfo">
+                    <div class="postContainer">
+                        <div class="postTimeBlock">
+                            <div class="postTime">
+                                <h5 class="textMuted">26.01.2019</h5>
+                            </div>
+                        </div>
+                        <div class="postDescriptionBlock">
+                            <div class="postDescription">
+                                <p>
+                                    В Ухань для оказания медицинской помощи зараженным коронавирусом нового типа, прибыла большая группа врачей, заявил глава Госкомитета по вопросам здравоохранения КНР Ма Сяовэй 26 января журналистам на пресс-конференции.
+                                    <br><br>
+                                    Сяовэй сообщил, что на данный момент в Ухань, очаг эпидемии, прибыло 2360 медиков. Также чиновник добавил, что за последующие три дня в городе будут организованы свыше 5 тысяч коек для заболевших.
+                                    <br><br>
+                                    Тем самым, по мнению Сяовэя, ситуация с нехваткой медиков, коек, защитных средств несколько улучшится.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="statusBtn">
+                    <div class="statusmark yesmark">Подтверждено</div>
+                </div>
+            </div>
+        </div>
+        <div class="i14 block news">
+            <div class="post">
+                <h1>
+                    С ПОДОЗРЕНИЕМ НА КОРОНАВИРУС СНЯЛИ С ПОЕЗДА ДВУХ ГРАЖДАН КИТАЯ В ШУ (КАЗАХСТАН)
+                </h1>
+                <div class="postImg">
+                    <img class="postDocument" src="https://wuhanpneumonia.ru/upload/iblock/3e8/3e8268478db7c0c1e0e81ecbe47edecd.jpg" alt="">
+                </div>
+                <div class="postInfo">
+                    <div class="postContainer postRed">
+                        <div class="postTimeBlock">
+                            <div class="postTime">
+                                <h5 class="textMuted">29.01.2019</h5>
+                            </div>
+                        </div>
+                        <div class="postDescriptionBlock">
+                            <div class="postDescription">
+                                <p>
+                                    В сети распространяется фото, где врачи в спецодежде бегут к поезду. Сообщалось, что на станции Шу остановили поезд из-за подозрения на инфицирование двух пассажиров коронавирусом.
+                                    29 января в поезде, который следовал по маршруту Сары-Агаш-Нур-Султан у граждан Китая не обнаружено никаких признаков вируса, сказал главный врач центральной районной больницы Мукатаев.
+                                    По подозрению в чихании граждане Китая доставлены в отделение районной инфекционной больницы. В результате проверки граждан выявлено отсутствие признаков вируса. Ситуация находится под контролем. ​
+                                    <br><br>
+                                    В районе функционирует специально оборудованная скорая помощь для профилактики опасной инфекции.​ Просим вас не паниковать, - говорится в сообщении акимата Шуского района.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="statusBtn">
+                    <div class="statusmark nomark">Не подтверждено</div>
+                </div>
+            </div>
+        </div>
+        <div class="i15 block news">
+            <div class="post">
+                <h1>
+                    ГРАЖДАНИН КИТАЯ ПОДОЗРЕВАЕТСЯ В ЗАРАЖЕНИИ КОРОНАВИРУСОМ В АНГОЛЕ
+                </h1>
+                <div class="postImg">
+                    <img class="postDocument" src="https://wuhanpneumonia.ru/upload/iblock/bf0/bf0f8f9e827ff0d7a4bcbf4cd56bf65f.jpg" alt="">
+                </div>
+                <div class="postInfo">
+                    <div class="postContainer">
+                        <div class="postTimeBlock">
+                            <div class="postTime">
+                                <h5 class="textMuted">30.01.2019</h5>
+                            </div>
+                        </div>
+                        <div class="postDescriptionBlock">
+                            <div class="postDescription">
+                                <p>
+                                    По словам чиновника, который выступал на пресс-конференции, пациент прибыл 12 дней назад и имеет высокую температуру и кашель.
+                                    <br><br>
+                                    Сильвия Лутукута сказала, что люди, которые имели контакт с пациентом, контактируют с целью медицинского обследования.
+                                    Несмотря на то, что гражданин Китая был госпитализирован, она призвала население сохранять спокойствие, подтвердив, что сектор здравоохранения готов бороться с возможными случаями заражения.
+                                    Это первый предполагаемый случай заражения коронавирусом в южноафриканском регионе.
+                                    <br><br>
+                                    Правительство Анголы объявило в минувшую субботу о чрезвычайном плане по предотвращению возможных случаев заражения коронавирусом в стране.
+                                    План предусматривает установку тепловизоров в Международном аэропорту и проведение профилактических мероприятий в портах, на сухопутных границах и остановках с большим потоком людей.
+                                    <br><br>
+                                    Коронавирус входит в обширное семейство вирусов, которое включает в себя те, которые вызывают обычный грипп, а также тяжелый острый респираторный синдром. Первыми симптомами являются высокая температура и кашель, которые могут ухудшиться до такой степени, что могут вызвать пневмонию.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="statusBtn">
+                    <div class="statusmark yesmark">Подтверждено</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="i9 block footer">
+        <div>
+            Copyright 2020.
+        </div>
+    </div>
+</body>
+
+</html>

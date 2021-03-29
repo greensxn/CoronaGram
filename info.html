@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="msapplication-TileColor" content="#000000">
+    <meta name="theme-color" content="#000000">
+    <title>CoronaGram! - Информация</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="Photo/logo3.png">
+    <link href="hthttps://fonts.googleapis.com/css?family=Google+Sans:100,300,400,500,700,900,100i,300i,400i,500i,700i,900i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="js.js"></script>
+</head>
+
+<body>
+    <div class="statusbar">
+        <div class="logo">
+            <a href="">
+                <img src="https://lh3.googleusercontent.com/pi4sh9P_3GTIb-pJ-tir7-cRNki4Z1lwgKqgTZ83f_O9KrnVqgRbuV6UCIQFnFRiMg" alt="" id="img_logo" class="img_logo" align="center">
+                <h1 id="logoText"><span style="color: #6A149B">C</span><span style="color: #6A149B">orona</span><span style="color:#8BC448">G</span><span style="color:#8BC448">ram</span><span style="color: #6A149B">!</span></h1>
+            </a>
+        </div>
+        <!--   <a href="http://t.me/CMETAHKA">
+              <h2 style="font-size: 0.6rem;">by @<span style="text-decoration: underline; ;">CMETAHKA</span></h2>
+          </a> -->
+        <div class="gridBar2" id="gridBar2">
+            <div class="b1 menu" id="bar2" style="width: 80%;">
+                <ol>
+                    <li>
+                        <a href="news.html">
+                            <i class="material-icons">chrome_reader_mode</i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="main.html">
+                            <i class="material-icons">home</i>
+                        </a>
+                    </li>
+                    <li onclick="show_menu(true, 2)" onmouseleave="show_menu(false, 2)" onmouseenter="show_menu(true, 2)">
+                        <div class="mapBtn" id="mapBtn2" style="color:white;">
+                            <i class="material-icons">public</i>
+                            <i class="material-icons iconMore" id="icon2">
+                                expand_more
+                            </i>
+                        </div>
+                        <div class="menu-addition" id="menu-addition2" style="border-top: none;">
+                            <ol>
+                                <a href="map/map-world.html">
+                                    <li>- Карта заражения Мира</li>
+                                </a>
+                                <a href="map/map-china.html">
+                                    <li>- Карта заражения Китая</li>
+                                </a>
+                                <a href="map/map-ukraine.html">
+                                    <li>- Карта заражения Украины</li>
+                                </a>
+                                <a href="map/map-russia.html">
+                                    <li>- Карта заражения России</li>
+                                </a>
+                            </ol>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="info.html" style="color:#8BC448">
+                            <i class="material-icons">help_outline</i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="about.html">
+                            <i class="material-icons">info</i>
+                        </a>
+                    </li>
+                </ol>
+            </div>
+        </div>
+        <!-- <div class="searchBar">
+            <div class="search">
+                <img src="Photo/search.png" alt="" height="20" align="left">
+                <h6>Поиск</h6>
+            </div>
+        </div>-->
+        <div class="profile">
+            <script async src="https://telegram.org/js/telegram-widget.js?7" data-telegram-login="CoronaGramBot" data-size="medium" data-onauth="onTelegramAuth(user)" data-request-access="write"></script>
+        </div>
+    </div>
+    <div class="social">
+        <div>
+            <a href="http://t.me/CMETAHKA" title="My Telegram">
+                <img src="Photo/telegram.png" alt="">
+            </a>
+            <a href="https://www.instagram.com/pripa.doc" title="My Instagram">
+                <img src="Photo/insta.png" alt="">
+            </a>
+            <a href="https://vk.com/mr.greenson" title="My VK">
+                <img src="Photo/vk.png" alt="">
+            </a>
+        </div>
+    </div>
+    <div id="btnUp">
+        <a href="#" style="color:white;">
+            <i class="material-icons" style="font-size: 50px;">
+                arrow_upward
+            </i>
+        </a>
+    </div>
+    <div class="gridBar">
+        <div class="b1 block menu">
+            <ol>
+                <li>
+                    <a href="news.html">
+                        <i class="material-icons">chrome_reader_mode</i>
+                        Новости
+                    </a>
+                </li>
+                <li>
+                    <a href="main.html">
+                        <i class="material-icons">home</i>
+                        Главная
+                    </a>
+                </li>
+                <li onclick="show_menu(true, 1)" onmouseleave="show_menu(false, 1)" onmouseenter="show_menu(true, 1)">
+                    <div class="mapBtn" id="mapBtn1" style="color:white;">
+                        <i class="material-icons">public</i>
+                        Карта
+                        <i class="material-icons iconMore" id="icon1">
+                            expand_more
+                        </i>
+                    </div>
+                    <div class="menu-addition" id="menu-addition1">
+                        <ol>
+                            <a href="map/map-world.html">
+                                <li>- Карта заражения Мира</li>
+                            </a>
+                            <a href="map/map-china.html">
+                                <li>- Карта заражения Китая</li>
+                            </a>
+                            <a href="map/map-ukraine.html">
+                                <li>- Карта заражения Украины</li>
+                            </a>
+                            <a href="map/map-russia.html">
+                                <li>- Карта заражения России</li>
+                            </a>
+                        </ol>
+                    </div>
+                </li>
+                <li>
+                    <a href="info.html" style="color:#8BC448">
+                        <i class="material-icons">help_outline</i>
+                        Информация
+                    </a>
+                </li>
+                <li>
+                    <a href="about.html">
+                        <i class="material-icons">info</i>
+                        О сайте
+                    </a>
+                </li>
+            </ol>
+        </div>
+    </div>
+    <div class="grid">
+        <div class="i16 block news-main" style="border-radius: 15px;">
+            <div class="mainPost">
+                <div></div>
+                <div class="mainInfo">
+                    <div class="description">
+                        <div style=" width: 100%;">
+                            <h1> Основные положения</h1>
+                            <p>Основная информация по коронавирусу 2019-nCoV, подтвержденная со многих источников (как российских, так и зарубежных)
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div></div>
+            </div>
+            <div class="mainPost" style="margin-top: -80px;">
+                <div class="mainInfo" style="min-height: 60px; width: 100%;">
+                    <ul class="about-list">
+                        <li id="list-menu1" onclick="show_hide(1); rotateElement(180, 'IconMore1');">
+                            <div>
+                                Пути передачи вируса
+                                <i class="material-icons" id="IconMore1">
+                                    expand_more
+                                </i>
+                            </div>
+                            <p class="about-list-inside" id="drop-content1">
+                                <span id="text-inside1">
+                                    1. По мнению экспертов Национальной комиссии по здравоохранению Китая, вирус 2019-nCoV может выжить на гладких поверхностях от нескольких часов до пяти дней, при определенных соотношениях температуры и влажности (!!!) <br><br>
+                                    2. Воздушно-капельным путём<br><br>
+                                    3. Через фекалии<br><br>
+                                    4. Через волосы
+                                </span>
+                            </p>
+                        </li>
+                        <li id="list-menu2" onclick="show_hide(2); rotateElement(180, 'IconMore2');">
+                            <div>
+                                Как вылечиться от коронавируса если вакцины еще нет?
+                                <i class="material-icons" id="IconMore2">
+                                    expand_more
+                                </i>
+                            </div>
+                            <p class="about-list-inside" id="drop-content2" >
+                                <span id="text-inside2">
+                                    Вирус убивают антитела иммунной системы, а врачи борются с бактериальной инфекцией, воспалением и последствиями, которые возникли в результате вирусной атаки на организм.
+                                    <br><br>
+                                    Антибиотиками лечат инфекцию которая присоединилась (пневмонии)<br>
+                                    Гормоны (борятся с отеком легких/воспалением)<br>
+                                    Кислород /ИВЛ - коррекция дыхательной недостаточности<br>
+                                    Ингибиторы протеаз (препараты против ВИЧ) - замедление деления вируса, экспериментально тоже применяют.
+                                    <br><br> <br>
+                                    Так что графа "вылеченные" - это лишь люди, у которых удалось убрать ПОСЛЕДСТВИЯ заражения 2019-nCoV. Простите что убили Ваш оптимизм.
+                                </span>
+                            </p>
+                        </li>
+                        <li id="list-menu3" onclick="show_hide(3); rotateElement(180, 'IconMore3');">
+                            <div>
+                                В чем опасность? Откуда такой хайп?
+                                <i class="material-icons" id="IconMore3">
+                                    expand_more
+                                </i>
+                            </div>
+                            <p class="about-list-inside" id="drop-content3">
+                                <span id="text-inside3">
+                                    Если вкратце - коронавирус действительно по официальной статистике НЕ должен вызывать панику и привлекать СТОЛЬКО внимания. Но, есть пара моментов, которые так или иначе беспокоят всех (кто-то это осознаёт, у кого-то это на уровне подсознания - не важно, главное суть). <br><br>
+                                    - Заболело всего 1409 человек (на 25 января) по официальной статистике. Реально - для нового вируса цифра никчемная, тем более для Китая, в котором 1.4 млрд (!!!) населения. Но - на карантине уже более 10ти городов и 35 млн человек. Не сходится <br>
+                                    - Вирус мутирует на каждой передаче к новому носителю. Это уже подтверждено.<br>
+                                    - Количество заразившихся с 11 января по 25 января (14 дней) выросло в 34,3 раза (с 41 до 1409 человек)<br>
+                                    - Вакцина по самым оптимистичным подсчетам будет готова через 3-6 месяцев<br>
+                                    - Период инкубации (при котором человек является активным носителем - то есть ходит и распространяет вирус) составляет от 1 до 14 дней. При этом симптоматика заболевания отсутствует
+                                </span>
+                            </p>
+                        </li>
+                        <li id="list-menu4" onclick="show_hide(4); rotateElement(180, 'IconMore4');">
+                            <div>
+                                Профилактика заражения
+                                <i class="material-icons" id="IconMore4">
+                                    expand_more
+                                </i>
+                            </div>
+                            <p class="about-list-inside" id="drop-content4">
+                                <span id="text-inside4">
+                                    Поскольку коронавирусы передаются преимущественно воздушно-капельным путем, не стоит без необходимости долго оставаться в местах скопления людей, а также нужно применять средства индивидуальной защиты. Также желательно сократить общение с выходцами из Китая и туристами, которые только что вернулись из стран данного региона. Разумеется обрабатывайте термически пищу и соблюдайте правила личной гигиены
+                                    <br><br>
+                                    В общем - мойте руки и ни с кем не целуйтесь на улице (было бы смешно, если бы не было так страшно). Проблема в том, что вирус на данный момент - темная лошадка. 22 января заявляли что коронавирус вообще не передаётся от человека к человеку. А 23 января медики в Китае работали в костюмах биологической защиты и закрыли на карантин (!!!) город с 11 миллионами населения (Ухань).
+                                </span>
+                            </p>
+                        </li>
+                        <li id="list-menu5" onclick="show_hide(5); rotateElement(180, 'IconMore5');">
+                            <div>
+                                Симптомы вируса
+                                <i class="material-icons" id="IconMore5">
+                                    expand_more
+                                </i>
+                            </div>
+                            <p class="about-list-inside" id="drop-content5">
+                                <span id="text-inside5">
+                                    На настоящий момент (26 января) все симптомы до сих пор НЕ выявлены. Из самых распространенных:<br><br>
+                                    - повышенная температура<br>
+                                    - кашель<br>
+                                    - затрудненное дыхание<br>
+                                    - диарея<br>
+                                    - головокружение<br>
+                                    - потеря сознания<br>
+                                    - поражения нервной системы<br><br>
+                                    Как вы понимаете, поражается большая часть внутренних органов
+                                </span>
+                            </p>
+                        </li>
+                        <li id="list-menu6" onclick="show_hide(6); rotateElement(180, 'IconMore6');">
+                            <div>
+                                Период инкубации
+                                <i class="material-icons" id="IconMore6">
+                                    expand_more
+                                </i>
+                            </div>
+                            <p class="about-list-inside" id="drop-content6">
+                                <span id="text-inside6">
+                                    От одного до четырнадцати дней (1 - 14 дней), в среднем составляет 10 дней
+                                </span>
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--   <div class="i2 block ad">
+        
+            <div align="center">
+                <img src="Photo/add1.jpg" alt="1" width="100%" style="border-radius: 15px 15px 0 0;">
+                <h3>Болото не ждёт!</h3>
+            </div>
+            <div align="center">
+                <img src="Photo/add2.jpg" alt="2" width="100%">
+                <h3>Жена в шоке! Муж просто...</h3>
+            </div>
+            <div align="center">
+                <img src="Photo/add3.jpg" alt="3" width="100%">
+                <h3>О?</h3>
+            </div>
+            <div align="center">
+                <img src="https://muizre.ru/_dr/8/16431973.jpg" alt="4" width="100%">
+                <h3>После этого чая ты почувствуешь себя...</h3>
+            </div>
+            <div align="center">
+                <img src="https://i.ytimg.com/vi/2OtnSr1jYX0/hqdefault.jpg?sqp=-oaymwEZCPYBEIoBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLCVuYl0oApwDh42YanCzW01JVPF4Q" alt="4" width="100%">
+                <h3>Не делай так</h3>
+            </div>
+        </div> -->
+    </div>
+    <div class="i9 block footer">
+        <div>
+            Copyright 2020.
+        </div>
+    </div>
+</body>
+
+</html>

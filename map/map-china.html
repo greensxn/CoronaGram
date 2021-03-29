@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="msapplication-TileColor" content="#000000">
+    <meta name="theme-color" content="#000000">
+    <title>CoronaGram! - Карта Китая</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="icon" href="../Photo/logo3.png">
+    <link href="hthttps://fonts.googleapis.com/css?family=Google+Sans:100,300,400,500,700,900,100i,300i,400i,500i,700i,900i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="../js.js"></script>
+</head>
+
+<body>
+    <div class="statusbar">
+        <div class="logo">
+            <a href="">
+                <img src="../Photo/logo3.png" alt="" id="img_logo" class="img_logo" align="center">
+                <h1 id="logoText"><span style="color: #6A149B">C</span><span style="color: #6A149B">orona</span><span style="color:#8BC448">G</span><span style="color:#8BC448">ram</span><span style="color: #6A149B">!</span></h1>
+            </a>
+            <!--   <a href="http://t.me/CMETAHKA">
+              <h2 style="font-size: 0.6rem;">by @<span style="text-decoration: underline; ;">CMETAHKA</span></h2>
+          </a> -->
+        </div>
+        <div class="gridBar2" id="gridBar2">
+            <div class="b1 menu" id="bar2" style="width: 80%;">
+                <ol>
+                    <li>
+                        <a href="../news.html">
+                            <i class="material-icons">chrome_reader_mode</i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../main.html">
+                            <i class="material-icons">home</i>
+                        </a>
+                    </li>
+                    <li onclick="show_menu(true, 2)" onmouseleave="show_menu(false, 2)" onmouseenter="show_menu(true, 2)">
+                        <div class="mapBtn" id="mapBtn2" style="color:#8BC448">
+                            <i class="material-icons">public</i>
+                            <i class="material-icons iconMore" id="icon2">
+                                expand_more
+                            </i>
+                        </div>
+                        <div class="menu-addition" id="menu-addition2" style="border-top: none;">
+                            <ol>
+                                <a href="map-china.html">
+                                    <li>- Карта заражения Мира</li>
+                                </a>
+                                <a href="map-china.html">
+                                    <li>- Карта заражения Китая</li>
+                                </a>
+                                <a href="map-ukraine.html">
+                                    <li>- Карта заражения Украины</li>
+                                </a>
+                                <a href="map-russia.html">
+                                    <li>- Карта заражения России</li>
+                                </a>
+                            </ol>
+                        </div>
+                    </li>
+                      <li>
+                        <a href="../info.html">
+                            <i class="material-icons">help_outline</i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../about.html">
+                            <i class="material-icons">info</i>
+                        </a>
+                    </li>
+                </ol>
+            </div>
+        </div>
+        <!-- <div class="searchBar">
+            <div class="search">
+                <img src="Photo/search.png" alt="" height="20" align="left">
+                <h6>Поиск</h6>
+            </div>
+        </div>-->
+        <!--       <div class="social">
+      <a href="http://t.me/CMETAHKA" title="My Telegram">
+          <img src="Photo/telegram.png" alt="">
+      </a>
+      <a href="https://www.instagram.com/pripa.doc" title="My Instagram">
+          <img src="Photo/insta.png" alt="">
+      </a>
+      <a href="https://vk.com/mr.greenson" title="My VK">
+          <img src="Photo/vk.png" alt="">
+      </a>
+  </div -->
+        <div class="profile">
+            <script async src="https://telegram.org/js/telegram-widget.js?7" data-telegram-login="CoronaGramBot" data-size="medium" data-onauth="onTelegramAuth(user)" data-request-access="write"></script>
+        </div>
+    </div>
+    <div class="social">
+        <div>
+            <a href="http://t.me/CMETAHKA" title="My Telegram">
+                <img src="../Photo/telegram.png" alt="">
+            </a>
+            <a href="https://www.instagram.com/pripa.doc" title="My Instagram">
+                <img src="../Photo/insta.png" alt="">
+            </a>
+            <a href="https://vk.com/mr.greenson" title="My VK">
+                <img src="../Photo/vk.png" alt="">
+            </a>
+        </div>
+    </div>
+    <div id="btnUp">
+        <a href="#" style="color:white;">
+            <i class="material-icons" style="font-size: 50px;">
+                arrow_upward
+            </i>
+        </a>
+    </div>
+    <div class="gridBar">
+        <div class="b1 block menu">
+            <ol>
+                <li>
+                    <a href="../news.html">
+                        <i class="material-icons">chrome_reader_mode</i>
+                        Новости
+                    </a>
+                </li>
+                <li>
+                    <a href="../main.html">
+                        <i class="material-icons">home</i>
+                        Главная
+                    </a>
+                </li>
+                <li onclick="show_menu(true, 1)" onmouseleave="show_menu(false, 1)" onmouseenter="show_menu(true, 1)">
+                    <div class="mapBtn" id="mapBtn1" style="color:#8BC448">
+                        <i class="material-icons">public</i>
+                        Карта
+                        <i class="material-icons iconMore" id="icon1">
+                            expand_more
+                        </i>
+                    </div>
+                    <div class="menu-addition" id="menu-addition1">
+                        <ol>
+                            <a href="map-world.html">
+                                <li>- Карта заражения Мира</li>
+                            </a>
+                            <a href="map-china.html">
+                                <li>- Карта заражения Китая</li>
+                            </a>
+                            <a href="map-ukraine.html">
+                                <li>- Карта заражения Украины</li>
+                            </a>
+                            <a href="map-russia.html">
+                                <li>- Карта заражения России</li>
+                            </a>
+                        </ol>
+                    </div>
+                </li>
+                    <li>
+                    <a href="../info.html">
+                        <i class="material-icons">help_outline</i>
+                        Информация
+                    </a>
+                </li>
+                <li>
+                    <a href="../about.html">
+                        <i class="material-icons">info</i>
+                        О сайте
+                    </a>
+                </li>
+            </ol>
+        </div>
+    </div>
+    <div class="grid">
+        <div class="i16 block news-main" style="border-radius: 15px;">
+            <div class="mainPost">
+                <div></div>
+                <div class="mainInfo">
+                    <div class="description">
+                        <h1>Карта Китая заражения вирусом 2019-nCoV</h1>
+                    </div>
+                    <ol class="map-list-infected">
+                        <a href="map-world.html" style="text-decoration: none;">
+                            <li>Карта заражения Мира</li>
+                        </a>
+                        <a href="map-ukraine.html" style="text-decoration: none;">
+                            <li>Карта заражения Украины</li>
+                        </a>
+                        <a href="map-russia.html" style="text-decoration: none;">
+                            <li>Карта заражения России</li>
+                        </a>
+                    </ol>
+                </div>
+                <div></div>
+            </div>
+            <div class="mainPost" style="margin-top: -50px;">
+                <div></div>
+                <div class="mainInfo" style="width: 100%;">
+                    <div class="description">
+                        <p>Статистика актуальна на 05.02.2020 19:20:03</p>
+                    </div>
+                    <!-- <div id="region_china"></div> -->
+                    <iframe src="https://ncov.su/maps/china/onlymap/" width="100%" height="900" webkitallowfullscreen="true"mozallowfullscreen="true" allowfullscreen="true" frameborder="0"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="i9 block footer">
+        <div>
+            Copyright 2020.
+        </div>
+    </div>
+</body>
+
+</html>

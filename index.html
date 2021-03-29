@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="msapplication-TileColor" content="#000000">
+    <meta name="theme-color" content="#000000">
+    <title>CoronaGram! - Главная</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="Photo/logo3.png">
+    <link href="hthttps://fonts.googleapis.com/css?family=Google+Sans:100,300,400,500,700,900,100i,300i,400i,500i,700i,900i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="js.js"></script>
+</head>
+
+<body>
+    <div class="statusbar">
+        <a href="">
+            <img src="https://lh3.googleusercontent.com/pi4sh9P_3GTIb-pJ-tir7-cRNki4Z1lwgKqgTZ83f_O9KrnVqgRbuV6UCIQFnFRiMg" alt="" id="img_logo" class="img_logo" align="center">
+            <h1 id="logoText"><span style="color: #6A149B">C</span><span style="color: #6A149B">orona</span><span style="color:#8BC448">G</span><span style="color:#8BC448">ram</span><span style="color: #6A149B">!</span></h1>
+        </a>
+        <!--  <a href="http://t.me/CMETAHKA">
+               <h2 style="font-size: 0.6rem;">by @<span style="text-decoration: underline; ;">CMETAHKA</span></h2>
+           </a> -->
+        <div class="gridBar2" id="gridBar2">
+            <div class="b1 menu" id="bar2" style="width: 80%;">
+                <ol>
+                    <li>
+                        <a href="news.html">
+                            <i class="material-icons">chrome_reader_mode</i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="main.html" style="color:#8BC448">
+                            <i class="material-icons">home</i>
+                        </a>
+                    </li>
+                    <li onclick="show_menu(true, 2)" onmouseleave="show_menu(false, 2)" onmouseenter="show_menu(true, 2)">
+                        <div class="mapBtn" id="mapBtn2" style="color:white;">
+                            <i class="material-icons">public</i>
+                            <i class="material-icons iconMore" id="icon2">
+                                expand_more
+                            </i>
+                        </div>
+                        <div class="menu-addition" id="menu-addition2" style="border-top: none;">
+                            <ol>
+                                <a href="map/map-world.html">
+                                    <li>- Карта заражения Мира</li>
+                                </a>
+                                <a href="map/map-china.html">
+                                    <li>- Карта заражения Китая</li>
+                                </a>
+                                <a href="map/map-ukraine.html">
+                                    <li>- Карта заражения Украины</li>
+                                </a>
+                                <a href="map/map-russia.html">
+                                    <li>- Карта заражения России</li>
+                                </a>
+                            </ol>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="info.html">
+                            <i class="material-icons">help_outline</i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="about.html">
+                            <i class="material-icons">info</i>
+                        </a>
+                    </li>
+                </ol>
+            </div>
+        </div>
+        <!-- <div class="searchBar">
+            <div class="search">
+                <img src="Photo/search.png" alt="" height="20" align="left">
+                <h6>Поиск</h6>
+            </div>
+        </div>-->
+        <div class="profile">
+            <script async src="https://telegram.org/js/telegram-widget.js?7" data-telegram-login="CoronaGramBot" data-size="medium" data-onauth="onTelegramAuth(user)" data-request-access="write"></script>
+        </div>
+    </div>
+    <div class="social">
+        <a href="http://t.me/CMETAHKA" title="My Telegram">
+            <img src="Photo/telegram.png" alt="">
+        </a>
+        <a href="https://www.instagram.com/pripa.doc" title="My Instagram">
+            <img src="Photo/insta.png" alt="">
+        </a>
+        <a href="https://vk.com/mr.greenson" title="My VK">
+            <img src="Photo/vk.png" alt="">
+        </a>
+    </div>
+    <div id="btnUp">
+        <a href="#" style="color:white;">
+            <i class="material-icons" style="font-size: 50px;">
+                arrow_upward
+            </i>
+        </a>
+    </div>
+    <div class="gridBar" id="gridBar">
+        <div class="b1 block menu" id="bar">
+            <ol>
+                <li>
+                    <a href="news.html">
+                        <i class="material-icons">chrome_reader_mode</i>
+                        Новости
+                    </a>
+                </li>
+                <li>
+                    <a href="main.html" style="color:#8BC448">
+                        <i class="material-icons">home</i>
+                        Главная
+                    </a>
+                </li>
+                <li onclick="show_menu(true, 1)" onmouseleave="show_menu(false, 1)" onmouseenter="show_menu(true, 1)">
+                    <div class="mapBtn" id="mapBtn1" style="color:white;">
+                        <i class="material-icons">public</i>
+                        Карта
+                        <i class="material-icons iconMore" id="icon1">
+                            expand_more
+                        </i>
+                    </div>
+                    <div class="menu-addition" id="menu-addition1">
+                        <ol>
+                            <a href="map/map-world.html">
+                                <li>- Карта заражения Мира</li>
+                            </a>
+                            <a href="map/map-china.html">
+                                <li>- Карта заражения Китая</li>
+                            </a>
+                            <a href="map/map-ukraine.html">
+                                <li>- Карта заражения Украины</li>
+                            </a>
+                            <a href="map/map-russia.html">
+                                <li>- Карта заражения России</li>
+                            </a>
+                        </ol>
+                    </div>
+                </li>
+                <li>
+                    <a href="info.html">
+                        <i class="material-icons">help_outline</i>
+                        Информация
+                    </a>
+                </li>
+                <li>
+                    <a href="about.html">
+                        <i class="material-icons">info</i>
+                        О сайте
+                    </a>
+                </li>
+            </ol>
+        </div>
+    </div>
+    <div class="grid" id="mainGrid">
+        <div class="i16 block news-main" style="border-radius: 15px;">
+            <div class="mainPost">
+                <div class="mainInfo">
+                    <div class="description">
+                        <div>
+                            <h1>Сайт по коронавирусу 2019-nCoV</h1>
+                        </div>
+                    </div>
+                    <p>
+                        Сайт сделан на чистом энтузиазме и огромном личном беспокойстве касаемо нового коронавируса 2019-nCoV
+                        <br>
+                        Будем крайне благодарны, если поделитесь информацией в соцсетях
+                        <br>
+                        Если Вам есть чем дополнить материалы сайта - не стесняйтесь, пишите в телеграм <a href="http://t.me/CMETAHKA" style="color: #0066C6;">t.me/CMETAHKA</a>
+                        <br>
+                        <br>
+                        з.ы. логотип выбран по фану, т.к. крайне много дезинформации в интернете и действия властей расходятся с логикой и представляемыми цифрами
+                    </p>
+                </div>
+                <i class="material-icons postIcon" style="color: #85CA6E;">
+                    dvr
+                </i>
+            </div>
+            <div class="mainPost">
+                <div class="mainInfo">
+                    <div class="description">
+                        <div>
+                            <h1>СТАТИСТИКА ПО МИРУ</h1>
+                            <p>Данные на 04.02.2020 23:55:03</p>
+                        </div>
+                    </div>
+                    <ol class="main-list-statistics">
+                        <li style="color: #0068CA;">
+                            <div class="list-statistics">
+                                <h3>23 214</h3>
+                                <p>На подозрении</p>
+                                <p class="textMuted">112,12 %</p>
+                            </div>
+                            <i class="material-icons">
+                                help_outline
+                            </i>
+                        </li>
+                        <li style="color: #5E00CA">
+                            <div class="list-statistics">
+                                <h3>20 704</h3>
+                                <p>Зараженных</p>
+                            </div>
+                            <i class="material-icons">
+                                blur_circular
+                            </i>
+                        </li>
+                        <li style="color: #FF6A00">
+                            <div class="list-statistics">
+                                <h3>2 788</h3>
+                                <p>Тяжелобольных</p>
+                                <p class="textMuted">13,47 %</p>
+                            </div>
+                            <i class="material-icons">
+                                error_outline
+                            </i>
+                        </li>
+                        <li style="color:red">
+                            <div class="list-statistics">
+                                <h3>427</h3>
+                                <p>Смерти</p>
+                                <p class="textMuted">2,06 %</p>
+                            </div>
+                            <i class="material-icons">
+                                highlight_off
+                            </i>
+                        </li>
+                        <li style="color: green">
+                            <div class="list-statistics">
+                                <h3>727</h3>
+                                <p>Вылечившихся</p>
+                                <p class="textMuted">3,51 %</p>
+                            </div>
+                            <i class="material-icons">
+                                sentiment_very_satisfied
+                            </i>
+                        </li>
+                        <li style="color: #2F2F2F">
+                            <div class="list-statistics">
+                                <h3>45 072</h3>
+                                <p>Всего коснулось <br>
+                                    людей</p>
+                            </div>
+                            <i class="material-icons">
+                                timelapse
+                            </i>
+                        </li>
+                    </ol>
+                </div>
+                <i class="material-icons postIcon" style="color: #CA6EAE;">
+                    bar_chart
+                </i>
+            </div>
+            <div class="mainPost">
+                <div class="mainInfo">
+                    <div class="description">
+                        <div>
+                            <h1>ГРАФИК ПО КИТАЮ</h1>
+                            <p>За последние 14 дней. Статистика берется с официального сайта мониторинга за эпидемиями (по Китаю. Данные на 05.02.2020 03:58:15)</p>
+                        </div>
+                    </div>
+                    <ul class="main-list-china-graph">
+                        <li>
+                            <div id="chart_infected"></div>
+                        </li>
+                        <li>
+                            <div id="chart_suspicion"></div>
+                        </li>
+                        <li>
+                            <div id="chart_death"></div>
+                        </li>
+                        <li>
+                            <div id="chart_cured"></div>
+                        </li>
+                        <li>
+                            <div id="chart_seriously"></div>
+                        </li>
+                        <li>
+                            <div id="chart_all"></div>
+                        </li>
+                    </ul>
+                </div>
+                <i class="material-icons postIcon" style="color: #6ECABE;">
+                    show_chart
+                </i>
+            </div>
+            <div class="mainPost">
+                <div class="mainInfo">
+                    <div class="description">
+                        <div>
+                            <h1>ЗАРАЖЕНИЕ ПО СТРАНАМ</h1>
+                            <p>Статистика берется из информационного поля интернета/телевидения с доверенных источников</p>
+                        </div>
+                    </div>
+                    <table style="text-align: left;">
+                        <thead>
+                            <th>Страна</th>
+                            <th>Зараженных</th>
+                            <th>Умерших</th>
+                            <th>Вылечившихся</th>
+                        </thead>
+                        <tr>
+                            <td>Китай</td>
+                            <td>20530</td>
+                            <td>426</td>
+                            <td>718</td>
+                        </tr>
+                        <tr>
+                            <td>Таиланд</td>
+                            <td>25</td>
+                            <td>0</td>
+                            <td>5</td>
+                        </tr>
+                        <tr>
+                            <td>Сингапур</td>
+                            <td>24</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>Япония</td>
+                            <td>20</td>
+                            <td>0</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td>Южная Корея</td>
+                            <td>15</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>Гонконг (Китай)</td>
+                            <td>13</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>Австралия</td>
+                            <td>12</td>
+                            <td>0</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td>Германия</td>
+                            <td>10</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>США</td>
+                            <td>8</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>Малайзия</td>
+                            <td>10</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>Вьетнам</td>
+                            <td>10</td>
+                            <td>0</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td>Тайвань (Китай)</td>
+                            <td>10</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>Макао (Китай)</td>
+                            <td>7</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>Франция</td>
+                            <td>6</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>Франция</td>
+                            <td>6</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>ОАЭ</td>
+                            <td>5</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>Канада</td>
+                            <td>4</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>Индия</td>
+                            <td>3</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>Италия</td>
+                            <td>2</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>Англия</td>
+                            <td>2</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>Россия</td>
+                            <td>2</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>Филиппины</td>
+                            <td>2</td>
+                            <td>1</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>Непал</td>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>Камбоджа</td>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>Шри-Ланка</td>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>Финляндия</td>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>Испания</td>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>Швеция</td>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>Бельгия</td>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+                    </table>
+                </div>
+                <i class="material-icons postIcon" style="color: #796ECA;">
+                    donut_small
+                </i>
+            </div>
+            <div class="mainPost">
+                <div class="mainInfo">
+                    <div class="description">
+                        <div>
+                            <h1>ГОРОДА НА КАРАНТИНЕ</h1>
+                        </div>
+                    </div>
+                    <table style="text-align: left;">
+                        <thead>
+                            <th>Город</th>
+                            <th>Дата закрытия</th>
+                            <th>Население</th>
+                        </thead>
+                        <tr>
+                            <td>Сянъян</td>
+                            <td>29.01.2020</td>
+                            <td>5 844 000</td>
+                        </tr>
+                        <tr>
+                            <td>Цзинмэнь</td>
+                            <td>29.01.2020</td>
+                            <td>2 839 000</td>
+                        </tr>
+                        <tr>
+                            <td>Суйчжоу</td>
+                            <td>29.01.2020</td>
+                            <td>2 200 000</td>
+                        </tr>
+                        <tr>
+                            <td>Сяогань</td>
+                            <td>29.01.2020</td>
+                            <td>4 665 000</td>
+                        </tr>
+                        <tr>
+                            <td>Даньян</td>
+                            <td>29.01.2020</td>
+                            <td>980 662</td>
+                        </tr>
+                        <tr>
+                            <td>Хуанганг</td>
+                            <td>24.01.2020</td>
+                            <td>6 162 069</td>
+                        </tr>
+                    </table>
+                </div>
+                <i class="material-icons postIcon" style="color: #CA6E6E;">
+                    domain_disabled
+                </i>
+            </div>
+            <div class="mainPost">
+                <div class="mainInfo">
+                    <div class="description">
+                        <div>
+                            <h1>Комментарии</h1>
+                            <p>Вы можете оставить отзыв по данной теме</p>
+                        </div>
+                    </div>
+                    <div class="CommentsBlock">
+                        <script class="" async src="https://comments.app/js/widget.js?2" data-comments-app-website="ftzBCUvG" data-dislikes="1" data-limit="5" data-page-id="coronogram.neocities.org" data-color="#000"></script>
+                    </div>
+                </div>
+                <i class="material-icons postIcon" style="color:#6ECAC4;">
+                    comment
+                </i>
+            </div>
+        </div>
+    </div>
+    <div class="i9 block footer">
+        <div>
+            Copyright 2020.
+        </div>
+    </div>
+</body>
+
+</html>
